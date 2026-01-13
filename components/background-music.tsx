@@ -6,29 +6,33 @@ import { useEffect, useRef, useState } from "react";
 export default function BackgroundMusic() {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [hasStarted, setHasStarted] = useState(false);
 
   useEffect(() => {
-    const startAudio = () => {
-      if (audioRef.current && !isPlaying) {
+    const handleFirstClick = () => {
+      if (audioRef.current && !hasStarted) {
         audioRef.current
           .play()
           .then(() => {
             setIsPlaying(true);
-            window.removeEventListener("click", startAudio);
+            setHasStarted(true);
           })
-          .catch((err) => console.log("Playback failed:", err));
+          .catch((err) => console.log("Autoplay failed:", err));
+
+        window.removeEventListener("click", handleFirstClick);
       }
     };
 
-    window.addEventListener("click", startAudio);
+    if (!hasStarted) {
+      window.addEventListener("click", handleFirstClick);
+    }
 
     return () => {
-      window.removeEventListener("click", startAudio);
+      window.removeEventListener("click", handleFirstClick);
     };
-  }, [isPlaying]);
+  }, [hasStarted]);
 
   const toggleMusic = (e: React.MouseEvent) => {
-    // Prevent the "window" click listener from firing if it's still active
     e.stopPropagation();
 
     if (audioRef.current) {
@@ -47,10 +51,9 @@ export default function BackgroundMusic() {
         ref={audioRef}
         src="/tak-sebebas-merpati-piano.MP3"
         loop
-        style={{ display: "none" }}
+        preload="auto"
       />
 
-      {/* Floating Control Button */}
       <button
         onClick={toggleMusic}
         style={{
@@ -68,12 +71,11 @@ export default function BackgroundMusic() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          fontSize: "20px",
           backdropFilter: "blur(4px)",
         }}
         aria-label="Toggle Background Music"
       >
-        {isPlaying ? <Pause /> : <Play />}
+        {isPlaying ? <Pause size={24} /> : <Play size={24} />}
       </button>
     </>
   );
