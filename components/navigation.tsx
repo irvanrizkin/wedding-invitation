@@ -5,8 +5,9 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { label: "Mempelai", href: "#bridegroom" },
-  { label: "Harapan", href: "#story" },
   { label: "Lokasi", href: "#details" },
+  { label: "Harapan", href: "#hope" },
+  { label: "Cerita", href: "#story" },
 ];
 
 export function Navigation() {

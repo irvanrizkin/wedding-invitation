@@ -7,6 +7,7 @@ import { Navigation } from "@/components/navigation";
 import BackgroundMusic from "@/components/background-music";
 import { neon } from "@neondatabase/serverless";
 import { notFound } from "next/navigation";
+import { StorySection } from "@/components/story-section";
 
 async function getInviteeById(id: string) {
   const sql = neon(process.env.DATABASE_URL ?? "");
@@ -32,8 +33,9 @@ export default async function WeddingPage({
       <Navigation />
       <HeroSection name={invitee?.name ?? "Tamu Undangan"} />
       <BrideGroomSection />
-      <CoupleSection />
       <DetailsSection sessionNumber={invitee?.session_number ?? 0} />
+      <CoupleSection />
+      <StorySection />
       <Footer />
       <BackgroundMusic />
     </main>
