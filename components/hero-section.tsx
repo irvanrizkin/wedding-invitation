@@ -7,7 +7,6 @@ export function HeroSection({ name }: { name: string }) {
         <div className="absolute inset-0 bg-background/60" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 text-center px-6 py-20">
         <p className="font-global font-bold italic text-base md:text-lg text-foreground/80 mb-6">
           Kepada Yth. Bpk/Ibu/Sdr(i)<br></br> {name}

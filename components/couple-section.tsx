@@ -15,7 +15,6 @@ export function CoupleSection() {
         </div>
 
         <div className="items-center max-w-5xl mx-auto">
-          {/* Story */}
           <div className="space-y-6">
             <p className="font-global text-lg leading-relaxed text-foreground text-center">
               Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan

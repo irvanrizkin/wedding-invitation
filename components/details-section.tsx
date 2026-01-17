@@ -34,29 +34,8 @@ export function DetailsSection({ sessionNumber }: { sessionNumber: number }) {
               {getSessionLabel(sessionNumber)}
             </p>
           </div>
-          {/*{details.map((detail) => (
-            <div
-              key={detail.title}
-              className="text-center p-8 border border-border bg-card hover:shadow-lg transition-shadow"
-            >
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-secondary flex items-center justify-center">
-                <detail.icon className="w-7 h-7 text-primary" />
-              </div>
-              <h3 className="font-serif text-2xl text-foreground mb-3">
-                {detail.title}
-              </h3>
-              <p className="text-lg font-medium text-foreground mb-1">
-                {detail.location}
-              </p>
-              <p className="text-muted-foreground mb-3">{detail.address}</p>
-              <p className="text-sm tracking-widest uppercase text-accent">
-                {detail.time}
-              </p>
-            </div>
-          ))}*/}
         </div>
 
-        {/* Map placeholder */}
         <div className="mt-4 max-w-5xl mx-auto">
           <div className="bg-muted rounded-lg">
             <GoogleMapsEmbed
