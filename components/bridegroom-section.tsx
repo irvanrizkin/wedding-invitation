@@ -10,7 +10,7 @@ export function BrideGroomSection() {
           </p>
           <h2 className="font-global text-2xl text-foreground">
             Dengan memohon Rahmat & Ridho Allah SWT, kami mengundang
-            Bapak/Ibu/Sdr(i) dalam acara Resepsi Pernikahan putra putri kami
+            Bapak/Ibu/Sdr(i) dalam acara Resepsi Pernikahan
           </h2>
           <hr className="mt-4 border-t border-border w-24 mx-auto" />
         </div>
