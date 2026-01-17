@@ -5,10 +5,10 @@ export function CoupleSection() {
     <section id="story" className="py-24 md:py-32 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
+          <p className="font-global text-2xl tracking-[0.3em] uppercase text-muted-foreground mb-4">
             Doa dan Harapan
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground">
+          <h2 className="font-global text-4xl md:text-5xl text-foreground">
             QS. Ar-Rum: 21
           </h2>
           <hr className="mt-4 border-t border-border w-24 mx-auto" />
@@ -37,7 +37,7 @@ export function CoupleSection() {
 
           {/* Story */}
           <div className="space-y-6">
-            <p className="text-lg leading-relaxed text-muted-foreground text-justify">
+            <p className="font-global text-lg leading-relaxed text-foreground text-justify">
               Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
               pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
               cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di

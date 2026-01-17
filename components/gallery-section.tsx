@@ -1,10 +1,9 @@
 import Image from "next/image";
 
 const images = [
+  { src: "/engagement-2.jpeg", position: "" },
   { src: "/balcony.jpeg", position: "" },
   { src: "/mountain.jpeg", position: "" },
-  { src: "/engagement-2.jpeg", position: "" },
-  { src: "/engagement-ring.png", position: "object-bottom" },
 ];
 
 export function GallerySection() {

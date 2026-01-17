@@ -7,7 +7,6 @@ const navItems = [
   { label: "Mempelai", href: "#bridegroom" },
   { label: "Harapan", href: "#story" },
   { label: "Lokasi", href: "#details" },
-  { label: "Galeri", href: "#gallery" },
 ];
 
 export function Navigation() {

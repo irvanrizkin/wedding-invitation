@@ -1,11 +1,12 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Merienda } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const _inter = Inter({ subsets: ["latin"] });
 const _playfair = Playfair_Display({ subsets: ["latin"] });
+const _merienda = Merienda({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Rizki & Adel - Wedding Invitation",
