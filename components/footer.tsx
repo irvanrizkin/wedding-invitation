@@ -15,10 +15,12 @@ export function Footer() {
           <span className="w-12 h-px bg-primary-foreground/30" />
         </div>
 
-        <p className="text-sm text-primary-foreground/60">#RizkiAndAdel2026</p>
-
-        <p className="text-xs text-primary-foreground/40 mt-8">
+        <p className="text-xs text-primary-foreground/40 mb-8">
           With love, Rizki & Adel
+        </p>
+
+        <p className="text-sm text-primary-foreground/60">
+          Crafted By : Irvan Rizki Nugraha (irvanrizkin)
         </p>
       </div>
     </footer>
