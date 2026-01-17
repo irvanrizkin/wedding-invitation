@@ -11,6 +11,9 @@ const _merienda = Merienda({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Rizki & Adel - Wedding Invitation",
   description: "Join us in celebrating our love - February 14, 2026",
+  openGraph: {
+    images: "/engagement-og-image.jpeg",
+  },
 };
 
 export default function RootLayout({
