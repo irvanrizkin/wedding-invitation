@@ -1,6 +1,6 @@
 import { SparklesIcon } from "lucide-react";
 import { GoogleMapsEmbed } from "@next/third-parties/google";
-import { getSessionLabel } from "@/utils/session";
+import { getSessionLabel, getSessionTitle } from "@/utils/session";
 
 export function DetailsSection({ sessionNumber }: { sessionNumber: number }) {
   return (
@@ -8,7 +8,7 @@ export function DetailsSection({ sessionNumber }: { sessionNumber: number }) {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <p className="font-global text-2xl tracking-[0.3em] uppercase text-muted-foreground mb-4">
-            Resepsi
+            {getSessionTitle(sessionNumber)}
           </p>
           <h2 className="font-global text-4xl md:text-5xl text-foreground">
             Waktu dan Tempat

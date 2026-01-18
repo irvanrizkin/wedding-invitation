@@ -1,6 +1,11 @@
+import { getSessionTitle } from "@/utils/session";
 import { HeartIcon } from "lucide-react";
 
-export function BrideGroomSection() {
+export function BrideGroomSection({
+  sessionNumber,
+}: {
+  sessionNumber: number;
+}) {
   return (
     <section id="bridegroom" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
@@ -10,7 +15,8 @@ export function BrideGroomSection() {
           </p>
           <h2 className="font-global text-2xl text-foreground">
             Dengan memohon Rahmat & Ridho Allah SWT, kami mengundang
-            Bapak/Ibu/Sdr(i) dalam acara Resepsi Pernikahan
+            Bapak/Ibu/Sdr(i) dalam acara {getSessionTitle(sessionNumber)}{" "}
+            Pernikahan
           </h2>
           <hr className="mt-4 border-t border-border w-24 mx-auto" />
         </div>
