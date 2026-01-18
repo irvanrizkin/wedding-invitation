@@ -32,8 +32,8 @@ export default async function WeddingPage({
     <main className="min-h-screen bg-background">
       <Navigation />
       <HeroSection name={invitee?.name ?? "Tamu Undangan"} />
-      <BrideGroomSection sessionNumber={invitee?.session_number ?? 0} />
-      <DetailsSection sessionNumber={invitee?.session_number ?? 0} />
+      <BrideGroomSection sessionNumber={invitee?.session_number ?? 99} />
+      <DetailsSection sessionNumber={invitee?.session_number ?? 99} />
       <CoupleSection />
       <StorySection />
       <Footer />
