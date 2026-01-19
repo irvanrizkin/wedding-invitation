@@ -38,6 +38,18 @@ export function StorySection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center max-w-5xl mx-auto mb-6">
+          <div className="relative md:order-last">
+            <div className="aspect-3/4 overflow-hidden">
+              <Image
+                src="/balcony.jpeg"
+                alt="Balcony Photo"
+                className="w-full h-full object-cover"
+                width={800}
+                height={1067}
+              />
+            </div>
+          </div>
+
           <div className="space-y-6">
             <h1 className="font-global text-2xl font-bold">
               Menjalin Hubungan
@@ -50,25 +62,13 @@ export function StorySection() {
               <strong>kita</strong>
             </p>
           </div>
-
-          <div className="relative">
-            <div className="aspect-3/4 overflow-hidden">
-              <Image
-                src="/balcony.jpeg"
-                alt="Balcony Photo"
-                className="w-full h-full object-cover"
-                width={800}
-                height={1067}
-              />
-            </div>
-          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center max-w-5xl mx-auto mb-6">
           <div className="relative">
             <div className="aspect-3/4 overflow-hidden">
               <Image
-                src="/engagement-2.jpeg"
+                src="/engagement-ring.png"
                 alt="Engagement Phone Photo"
                 className="w-full h-full object-cover"
                 width={800}
@@ -87,9 +87,9 @@ export function StorySection() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-12 md:gap-20 items-center max-w-5xl mx-auto mb-6">
-          <div className="relative">
-            <div className="aspect-3/4 overflow-hidden">
+        <div className="grid md:grid-cols-3 gap-0 md:gap-20 items-center max-w-5xl mx-auto mb-6">
+          <div className="relative order-1">
+            <div className="overflow-hidden">
               <Image
                 src="/ring-separate.jpeg"
                 alt="Balcony Photo"
@@ -100,28 +100,28 @@ export function StorySection() {
             </div>
           </div>
 
-          <div className="space-y-6">
-            <h1 className="font-global text-2xl font-bold text-center">
+          <div className="relative order-2 md:order-3">
+            <div className="overflow-hidden">
+              <Image
+                src="/ring-join.jpeg"
+                alt="Balcony Photo"
+                className="w-full h-full object-contain"
+                width={800}
+                height={1067}
+              />
+            </div>
+          </div>
+
+          <div className="space-y-6 order-3 md:order-2 mt-6 md:mt-0">
+            <h1 className="font-global text-2xl font-bold text-left md:text-center">
               Menikah
             </h1>
-            <p className="font-global text-lg leading-relaxed text-foreground text-center">
+            <p className="font-global text-lg leading-relaxed text-foreground text-justify md:text-center">
               Kini tiba saatnya bagi kita untuk menyatukan jiwa, mengikat janji
               suci di hadapan Yang Maha Kuasa, satu detak yang seirama, serta
               satu tujuan yang akhirnya bermuara pada janji suci untuk setia dan
               menua bersama.
             </p>
-          </div>
-
-          <div className="relative">
-            <div className="aspect-3/4 overflow-hidden">
-              <Image
-                src="/ring-join.jpeg"
-                alt="Balcony Photo"
-                className="w-full h-full object-contain "
-                width={800}
-                height={1067}
-              />
-            </div>
           </div>
         </div>
       </div>

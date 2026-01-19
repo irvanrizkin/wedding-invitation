@@ -14,9 +14,9 @@ export function HeroSection({ name }: { name: string }) {
 
         <div className="aspect-square overflow-hidden group cursor-pointer">
           <Image
-            src={"/engagement-ring.png"}
+            src={"/engagement-2.jpeg"}
             alt={`Gallery image`}
-            className={`w-full h-full object-cover object-bottom transition-transform duration-500 group-hover:scale-105`}
+            className={`w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105`}
             width={500}
             height={500}
           />
